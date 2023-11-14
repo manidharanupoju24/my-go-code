@@ -19,3 +19,9 @@
 * what is the entry point in a go program? <br> The main function
 
 * Which package consists of main() function? <br> package main
+
+* Type checking occurs at compile time for statically typed languages. Type checking occures at run time for dynamically type languages. This is the main difference between statically and dynamically typed programming languages.
+
+* In dynamic typing, a variable is allowed to change its data type.
+
+* In static typing, a variable is not allowed to change its data type.
