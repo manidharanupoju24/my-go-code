@@ -25,3 +25,11 @@
 * In dynamic typing, a variable is allowed to change its data type.
 
 * In static typing, a variable is not allowed to change its data type.
+
+* Running  ``` go mod init my-go-code ``` would generate a  ```go.mod``` file, which has module name and go version details.
+
+* In go, package is a way of organizing and reusing code.
+
+* You can have multiple go source files with same package name in a directory, and they will be treated as a single package by the go compiler.
+
+* There are many predefined packages and you can use them using ```package``` keyword.
