@@ -1,0 +1,12 @@
+apiVersion: my-custom-app.stickers.com/v1
+kind: MyPythonApp
+metadata:
+  labels:
+    app.kubernetes.io/name: mypythonapp
+    app.kubernetes.io/instance: mypythonapp-sample
+    app.kubernetes.io/part-of: my-app
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: my-app
+  name: mypythonapp-sample
+spec:
+  # TODO(user): Add fields here

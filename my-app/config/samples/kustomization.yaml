@@ -1,0 +1,4 @@
+## Append samples of your project ##
+resources:
+- my-custom-app_v1_mypythonapp.yaml
+#+kubebuilder:scaffold:manifestskustomizesamples
