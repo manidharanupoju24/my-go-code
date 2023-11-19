@@ -10,3 +10,19 @@ metadata:
   name: mypythonapp-sample
 spec:
   # TODO(user): Add fields here
+  companyName: Stickers Company
+  applicationDescription: Emoji generator application
+  appContainerName: myapp-controller
+  appImage: sachinhr/my-python-app
+  appPort: 5001
+  monitorContainerName: monitoring-container
+  monitorImage: busybox:latest
+  monitorCommand: "sh -c 'while true; do wget -O /dev/null http://localhost:5001; sleep 10; done'"
+  size: 3
+  service:
+    name: http
+    protocol: TCP
+    port: 80
+    targetPort: 5001
+    nodePort: 30000
+    type: NodePort
