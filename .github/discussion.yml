@@ -1,0 +1,65 @@
+---
+title: "Alert: <alert title>"
+labels: "sre, prom-issue"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Guidelines
+        - This Discussion form is capture the details of the alert recieved for the production xmatters page.
+        - Please provide maximum information here about the page recieved / alert raised, so that it can be used as feedback.
+        - This feedback can be used to further enhance the alerting system for the platform.
+  - type: markdown
+    attributes:
+      value: |
+        # Alert Information
+  - type: dropdown
+    id: alert-info-1
+    attributes:
+      label: Prometheus Alert?
+      description: Is the ID recieved a prometheus alert?
+      options:
+        - "Yes"
+        - "No"
+  - type: input
+    id: alert-info-2
+    attributes:
+      label: Timing of the page
+      description: Timestamp for the page received by on-call engineer
+      placeholder: |
+        Date and time of the page received
+  - type: input
+    id: alert-info-3
+    attributes:
+      label: Situation ID
+      description: Moogsoft Situation ID which is attached to xmatters alert
+      placeholder: |
+        6 digit id attached to the xmatters alert
+  - type: input
+    id: alert-info-4
+    attributes:
+      label: Prometheus Alert Name
+      description: If it a prometheus alert from prod, the alert name can be fetched from slack channel.
+      placeholder: "Example: KPaaS_ContainerWaiting"
+  - type: input
+    id: alert-info-5
+    attirbutes:
+      label: Prometheus Alert Link
+      description: Slack channel alert URL
+  - type: markdown
+    attributes:
+      value: |
+        # Feedback
+  - type: dropdown
+    id: feedback-1
+    attributes:
+      label: Do you think this alert is required?
+      options:
+        - "Yes"
+        - "No"
+  - type: input
+    id: feedback-2
+    attributes:
+      label: What are your thoughts?
+      placeholder: Jot down your thoughts about the alert your received, so that this can be used as feedback to improve the alerting mechanism.
